@@ -20,6 +20,7 @@
         "start": "bundle exec jekyll serve -w -l --host 0.0.0.0",
         "dev": "grunt watch & npm run start",
         "boil": "git push boilerplate boilerplate:master",
-        "push": "git push origin master --tag"
+        "push": "git push origin master --tag",
+        "preview": "bundle exec jekyll serve"
     }
 }
