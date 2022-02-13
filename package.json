@@ -1,15 +1,16 @@
 {
-    "name": "hux-blog",
-    "title": "Hux Blog",
-    "author": "Hux <huxpro@gmail.com>",
+    "name": "PhcPro-blog",
+    "title": "PhcPro Blog",
+    "author": "PhcPro <iamthephc@gmail.com>",
     "version": "1.8.2",
-    "homepage": "http://huxpro.github.io",
+    "homepage": "http://iamphc.github.io",
     "repository": {
         "type": "git",
-        "url": "https://github.com/Huxpro/huxpro.github.io"
+        "url": "https://github.com/iamphc/iamphc.github.io"
     },
-    "bugs": "https://github.com/Huxpro/huxpro.github.io/issues",
+    "bugs": "https://github.com/iamphc/iamphc.github.io/issues",
     "devDependencies": {
+        "cz-conventional-changelog": "^3.3.0",
         "grunt": ">=1.3.0",
         "grunt-banner": "~0.2.3",
         "grunt-contrib-less": "^2.0.0",
@@ -22,5 +23,10 @@
         "boil": "git push boilerplate boilerplate:master",
         "push": "git push origin master --tag",
         "preview": "bundle exec jekyll serve"
+    },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog"
+        }
     }
 }
