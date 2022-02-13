@@ -1,4 +1,4 @@
-Hux Blog User Manual
+PhcPro Blog User Manual
 ====================
 
 * Basics
