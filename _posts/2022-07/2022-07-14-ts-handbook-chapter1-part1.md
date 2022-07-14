@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "TypeScript 手册，章节1(第1部分)"
-subtitle: "实用的内置类型（全局可用）"
+subtitle: "TS基础：实用的内置类型（全局可用）"
 date: 2022-07-14 16:00:00
 author: "PhcPro"
 catalog: false

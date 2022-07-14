@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "TypeScript 手册，章节1(第2部分)"
-subtitle: "declare——声明的几种使用场景"
+subtitle: "TS基础：declare——声明的几种使用场景"
 date: 2022-07-14 16:00:00
 author: "PhcPro"
 catalog: false
