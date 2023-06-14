@@ -14,8 +14,10 @@ tags:
 --- 
 
 ### react中的细粒度更新
+框架的响应式更新 = 细粒度更新
+在vue中，通过proxy或者属性描述符实现；
 
-### 当前effect环境
+### 当前effect环境栈
 ```js
 const effectStack = []
 ```
@@ -81,6 +83,16 @@ function useEffect(callback) {
 
 ### 实现useMemo
 ```js
+function useMemo(callback) {
+    const [s, setS] = useState()
+    useEffect(() => setS(callback()))
+    return s
+}
 ```
 
-### react为什么不用细粒度更新
+### 以上的细粒度更新相比react-hooks的优势是什么
+- useEffect会自动收集依赖，无须显示声明依赖
+- 每次执行useEffect，都会重新收集state依赖
+
+### react为什么不用以上的细粒度更新
+react的每次更新都会从根元素出发
